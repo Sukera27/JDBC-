@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.example.proyectoaccesoadatos.LoginController"
+           prefHeight="400.0" prefWidth="600.0">
+
+    <VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: #f7f7f7; -fx-padding: 10px;">
+        <Label text="Inicio de Sesión" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #ff6600; -fx-background-color: #fff; -fx-padding: 10px; -fx-margin-top: 20px;" />
+
+        <TextField fx:id="usernameField" promptText="Nombre de Usuario" maxWidth="200" style="-fx-border-width: 1px; -fx-border-color: #ccc; -fx-padding: 10px; -fx-margin-top: 10px;" />
+
+        <PasswordField fx:id="passwordField" promptText="Contraseña" maxWidth="200" style="-fx-border-width: 1px; -fx-border-color: #ccc; -fx-padding: 10px; -fx-margin-top: 10px;" />
+
+        <Button fx:id="loginButton" text="Iniciar Sesión" onAction="#login" maxWidth="200" style="-fx-background-color: #ff6600; -fx-text-fill: #fff; -fx-font-size: 16px; -fx-font-weight: bold; -fx-border: none; -fx-padding: 10px; -fx-cursor: pointer;" />
+        <Label fx:id="errorLabel" textFill="red" />
+
+    </VBox>
+</StackPane>

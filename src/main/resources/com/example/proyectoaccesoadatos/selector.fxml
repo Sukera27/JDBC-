@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.example.proyectoaccesoadatos.SelectorController"
+           prefHeight="400.0" prefWidth="600.0">
+    <VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: #f7f7f7; -fx-padding: 10px;">
+        <Label text="Selecciona una tabla" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #E44D26;" />
+        <ComboBox fx:id="tableComboBox" promptText="Selecciona una tabla" style=" -fx-border-width: 1px; -fx-padding: 5px;" />
+        <Button fx:id="nextButton" text="Siguiente" onAction="#goToNextScreen" style="-fx-background-color: #E44D26; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-padding: 10px; -fx-cursor: pointer;" />
+    </VBox>
+</StackPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.proyectoaccesoadatos.TableController"
+            prefHeight="400.0" prefWidth="600.0">
+
+
+    <VBox alignment="CENTER" spacing="10" layoutX="25.0" layoutY="50.0" style="-fx-background-color: #f7f7f7; -fx-padding: 10px;">
+        <TableView fx:id="tableView" prefWidth="550.0" prefHeight="300.0">
+            <!-- Aquí puedes definir las columnas si es necesario, aunque también se pueden definir programáticamente -->
+        </TableView>
+
+        <HBox alignment="CENTER" spacing="10" layoutX="25.0" layoutY="50.0">
+            <Button fx:id="CSV" text="Convertir en csv" onAction="#exportToCSV" style="-fx-background-color: #E44D26; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px; -fx-cursor: pointer;" />
+            <Button fx:id="backButton" text="Volver a la selección de tabla" onAction="#goBackToTableSelection" style="-fx-background-color: #E44D26; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px; -fx-cursor: pointer;" />
+            <Button fx:id="XML" text="Convertir en xml" onAction="#exportToXML" style="-fx-background-color: #E44D26; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px; -fx-cursor: pointer;" />
+        </HBox>
+    </VBox>
+
+</AnchorPane>
